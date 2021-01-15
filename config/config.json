@@ -1,0 +1,43 @@
+{
+  "development": {
+    "mysql": {
+			"username": "root",
+			"password": "root",
+			"database": "carwash",
+			"host": "mysql",
+			"dialect": "mysql"
+		},
+		"mail": {
+			"from": "",
+			"to": "",
+			"smtp": {
+				"host": "smtp.mailtrap.io",
+				"port": 587,
+				"secure": false,
+				"auth": {
+					"user": "",
+					"pass": ""
+				}
+			}
+		}
+  },
+  "production": {
+		"use_env_variable": "DATABASE_CONNECTION",
+    "mysql": {
+			"dialect": "mysql"
+		},
+		"mail": {
+			"from": "",
+			"to": "",
+			"smtp": {
+				"host": "smail.smtp2go.com",
+				"port": 2525,
+				"secure": false,
+				"auth": {
+					"user": "",
+					"pass": ""
+				}
+			}
+		}
+  }
+}
